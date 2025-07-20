@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>讯飞人工智能协会 - 活动列表</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <div class="header-left">
+                <a href="index.html" class="logo">
+                    <img src="images/logo_blue.png" alt="讯飞人工智能协会Logo">
+                    <span>讯飞人工智能协会</span>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="about.html">关于我们</a></li>
+                    <li><a href="activities.html" class="active">活动列表</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">新闻中心 <i class="fas fa-caret-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="#">协会新闻</a>
+                            <a href="#">行业动态</a>
+                            <a href="#">通知公告</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">成员与合作 <i class="fas fa-caret-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="#">成员风采</a>
+                            <a href="#">加入我们</a>
+                            <a href="#">合作伙伴</a>
+                        </div>
+                    </li>
+                    <li><a href="#contact-info">联系我们</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <button class="search-btn"><i class="fas fa-search"></i></button>
+                <button class="toggle-menu-btn"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="about.html">关于我们</a></li>
+            <li><a href="activities.html">活动列表</a></li>
+            <li><a href="#">新闻中心</a></li>
+            <li><a href="#">成员与合作</a></li>
+            <li><a href="#contact-info">联系我们</a></li>
+        </ul>
+    </div>
+
+    <section class="page-hero-section activities-hero">
+        <div class="container">
+            <h1>活动列表</h1>
+            <p>探索协会精彩活动，共同参与AI盛宴</p>
+        </div>
+    </section>
+
+    <div class="container main-content-area">
+
+        <section class="activity-filter-section content-block">
+            <h2 class="sub-heading">活动筛选</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">全部活动</button>
+                <button class="filter-btn" data-filter="upcoming">近期活动</button>
+                <button class="filter-btn" data-filter="past">往期回顾</button>
+                <button class="filter-btn" data-filter="online">线上活动</button>
+                <button class="filter-btn" data-filter="offline">线下活动</button>
+            </div>
+            <div class="search-bar">
+                <input type="text" id="activity-search" placeholder="搜索活动名称或关键词...">
+                <button id="search-btn"><i class="fas fa-search"></i> 搜索</button>
+            </div>
+        </section>
+
+        <section class="activity-list-section">
+            <h2 class="sub-heading">所有活动</h2>
+            <div class="activity-grid">
+                <div class="activity-card upcoming offline" data-title="AI技术沙龙：大模型与未来">
+                    <div class="activity-image" style="background-image: url('https://via.placeholder.com/400x250?text=AI+Salon');"></div>
+                    <div class="activity-content">
+                        <h3 class="activity-title"><a href="#">AI技术沙龙：大模型与未来</a></h3>
+                        <p class="activity-meta"><i class="far fa-calendar-alt"></i> 2025年7月15日 | <i class="fas fa-map-marker-alt"></i> 协会会议室B203</p>
+                        <p class="activity-description">深入探讨大语言模型LLM的最新进展、应用前景及挑战。业界专家分享前沿洞察。</p>
+                        <div class="activity-tags">
+                            <span class="tag tag-tech">技术沙龙</span>
+                            <span class="tag tag-upcoming">近期</span>
+                        </div>
+                        <a href="#" class="btn btn-primary">立即报名 <i class="fas fa-angle-right"></i></a>
+                    </div>
+                </div>
+                <div class="activity-card upcoming online" data-title="Python编程入门与AI应用实践">
+                    <div class="activity-image" style="background-image: url('https://via.placeholder.com/400x250?text=Python+AI');"></div>
+                    <div class="activity-content">
+                        <h3 class="activity-title"><a href="#">Python编程入门与AI应用实践</a></h3>
+                        <p class="activity-meta"><i class="far fa-calendar-alt"></i> 2025年8月3日-4日 | <i class="fas fa-desktop"></i> 线上直播</p>
+                        <p class="activity-description">为初学者设计的Python编程及AI库应用实战课程，手把手教学。</p>
+                        <div class="activity-tags">
+                            <span class="tag tag-workshop">工作坊</span>
+                            <span class="tag tag-upcoming">近期</span>
+                            <span class="tag tag-online">线上</span>
+                        </div>
+                        <a href="#" class="btn btn-primary">立即报名 <i class="fas fa-angle-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="activity-card past offline" data-title="首届“AI+生活”创意设计大赛决赛">
+                    <div class="activity-image" style="background-image: url('https://via.placeholder.com/400x250?text=AI+Competition');"></div>
+                    <div class="activity-content">
+                        <h3 class="activity-title"><a href="#">首届“AI+生活”创意设计大赛决赛</a></h3>
+                        <p class="activity-meta"><i class="far fa-calendar-alt"></i> 2025年5月28日 | <i class="fas fa-university"></i> 大学礼堂</p>
+                        <p class="activity-description">经过数月角逐，大赛圆满落幕，展示众多创意AI应用。</p>
+                        <div class="activity-tags">
+                            <span class="tag tag-competition">竞赛</span>
+                            <span class="tag tag-past">已结束</span>
+                        </div>
+                        <a href="#" class="btn btn-secondary">查看回顾 <i class="fas fa-angle-right"></i></a>
+                    </div>
+                </div>
+                <div class="activity-card past online" data-title="机器学习基础公开课系列">
+                    <div class="activity-image" style="background-image: url('https://via.placeholder.com/400x250?text=ML+Course');"></div>
+                    <div class="activity-content">
+                        <h3 class="activity-title"><a href="#">机器学习基础公开课系列（共8讲）</a></h3>
+                        <p class="activity-meta"><i class="far fa-calendar-alt"></i> 2025年3月-5月 | <i class="fas fa-video"></i> 线上回放</p>
+                        <p class="activity-description">系列公开课从零开始讲解机器学习核心概念与算法。</p>
+                        <div class="activity-tags">
+                            <span class="tag tag-course">课程</span>
+                            <span class="tag tag-past">已结束</span>
+                            <span class="tag tag-online">线上</span>
+                        </div>
+                        <a href="#" class="btn btn-secondary">观看回放 <i class="fas fa-angle-right"></i></a>
+                    </div>
+                </div>
+                 <div class="activity-card past offline" data-title="讯飞AI技术开放日">
+                    <div class="activity-image" style="background-image: url('https://via.placeholder.com/400x250?text=Open+Day');"></div>
+                    <div class="activity-content">
+                        <h3 class="activity-title"><a href="#">讯飞AI技术开放日</a></h3>
+                        <p class="activity-meta"><i class="far fa-calendar-alt"></i> 2024年12月10日 | <i class="fas fa-building"></i> 讯飞科技园</p>
+                        <p class="activity-description">参观讯飞最新AI实验室，与资深工程师面对面交流。</p>
+                        <div class="activity-tags">
+                            <span class="tag tag-exhibition">参观</span>
+                            <span class="tag tag-past">已结束</span>
+                        </div>
+                        <a href="#" class="btn btn-secondary">查看回顾 <i class="fas fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="pagination">
+                <a href="#">&laquo; 上一页</a>
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">下一页 &raquo;</a>
+            </div>
+        </section>
+
+    </div>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-columns">
+                <div class="footer-col">
+                    <h4>关于协会</h4>
+                    <ul>
+                        <li><a href="about.html">协会简介</a></li>
+                        <li><a href="#">协会章程</a></li>
+                        <li><a href="#">组织架构</a></li>
+                        <li><a href="#">发展历程</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>最新动态</h4>
+                    <ul>
+                        <li><a href="#">协会新闻</a></li>
+                        <li><a href="#">活动通知</a></li>
+                        <li><a href="#">科研成果</a></li>
+                        <li><a href="#">媒体报道</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="activities.html">活动报名</a></li>
+                        <li><a href="#">会员登录</a></li>
+                        <li><a href="#">资料下载</a></li>
+                        <li><a href="#">人才招聘</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>关注我们</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-qq"></i></a>
+                        <a href="#"><i class="fab fa-weixin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-weibo"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 讯飞人工智能协会. 保留所有权利. | <a href="#">隐私政策</a> | <a href="#">法律声明</a></p>
+                <p>技术支持: 讯飞AI团队</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
